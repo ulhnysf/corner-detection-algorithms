@@ -149,6 +149,8 @@ Projeyle ilişkili IEEE biçimindeki çalışma: **“Köşe Tespiti Algoritmala
 
 Bu çalışma eğitim ve araştırma amaçlı bir bilgisayarla görme projesidir.
 
+[IEEE Formatındaki Proje Raporunu Görüntüle](docs/Kose_Tespiti_Proje_Raporu.pdf)
+
 ## Veri Seti ve Yeniden Üretilebilirlik
 
 Projenin orijinal deneylerinde bina, iç mekan, yol ve doku kategorilerinden toplam 20 görüntü kullanılmıştır.
