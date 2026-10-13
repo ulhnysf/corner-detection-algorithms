@@ -121,6 +121,8 @@ Bu işlemler sonucunda:
 
 **Not:** Dosyalar göreli klasör yolları kullandığından komutların proje ana klasöründe çalıştırılması önemlidir.
 
+**Çıktı klasörleri hakkında not:** GitHub deposunda paylaşılan FAST ve Shi-Tomasi sonuç görselleri `demo/fast/` ve `demo/shi_tomasi/` klasörlerinde, Harris ve ORB sonuç görselleri ise `results/harris/` ve `results/orb/` klasörlerinde bulunmaktadır. Algoritma betikleri yeniden çalıştırıldığında Harris çıktıları `demo/harris/`, ORB çıktıları ise `demo/orb/` altında oluşturulur. Dolayısıyla depoda önceden kaydedilmiş görsellerin konumları ile yeniden çalıştırılarak üretilen çıktıların konumları farklı olabilir.
+
 ## Kaydedilmiş performans sonuçları
 
 Projeyle birlikte gelen `all_metrics_summary.csv` dosyasında yer alan ortalama ölçümler:
