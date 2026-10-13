@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Kaynagi dogrulanmamis doku gorselleri
+**/texture/
+/report_images/*[Tt]exture*
