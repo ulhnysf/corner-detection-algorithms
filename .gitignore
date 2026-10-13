@@ -10,3 +10,4 @@ Thumbs.db
 # Kaynagi dogrulanmamis doku gorselleri
 **/texture/
 /report_images/*[Tt]exture*
+results/local_benchmark/

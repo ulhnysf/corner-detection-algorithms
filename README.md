@@ -136,6 +136,51 @@ Bu deneyde **FAST**, kaydedilmiş ortalama işlem süresi bakımından en hızl�
 
 **Önemli:** Tespit sayıları doğrudan bir **doğruluk (accuracy)** ölçüsü değildir. Harris için eşik üstündeki yanıt pikselleri sayılırken Shi-Tomasi en fazla 100, ORB ise hedef olarak 500 anahtar nokta döndürmeye ayarlanmıştır. FAST, tespit ettiği anahtar noktaları sayar. Bu nedenle sayılar birbirleriyle doğrudan doğruluk karşılaştırması için kullanılmamalıdır.
 
+## Tekrarlı Performans Karşılaştırması (Benchmark v2)
+
+Algoritmalar, herkese açık depoda bulunan 15 görüntü üzerinde
+(building, indoor ve road kategorileri) yeniden test edilmiştir.
+
+Ölçüm yöntemi:
+- Her algoritma ve görüntü için 3 ısınma çalıştırması.
+- Her algoritma ve görüntü için 20 zaman ölçümü.
+- Toplam 1.200 zaman ölçümü.
+- time.perf_counter_ns() kullanılarak süre ölçümü.
+- Görüntü okuma süresi ölçümlere dahil değildir.
+- OpenCV iş parçacığı sayısı 1, OpenCL devre dışıdır.
+- Python 3.12.10, OpenCV 5.0.0 kullanılmıştır.
+
+| Algoritma | Ortalama süre (ms) | Medyan süre (ms) |
+|---|---:|---:|
+| FAST | 1.4440 | 0.9163 |
+| Shi-Tomasi | 4.7921 | 3.2188 |
+| Harris | 5.0925 | 3.4763 |
+| ORB | 6.1638 | 3.6245 |
+
+Medyan, görüntü başına ortalama sürelerin medyanıdır.
+
+Bu deneyde FAST en düşük ortalama çalışma süresine sahiptir.
+Sonuçlar kullanılan donanıma ve çalışma koşullarına bağlıdır.
+Tespit sayıları doğruluk (accuracy) ölçütü değildir.
+Harris eşik üzerindeki pikselleri sayarken ORB, anahtar nokta
+tespitinin yanında descriptor hesaplaması da yapmaktadır.
+
+Önceki 20 görüntülük deneyin sonuçları korunmuştur.
+Yeni benchmark, 15 görüntülük farklı bir deneydir.
+
+### Yeniden çalıştırma
+
+
+```powershell
+.\.venv\Scripts\python.exe benchmark_metrics.py --output-dir results/local_benchmark
+```
+
+
+Yeni benchmark sonuçları:
+- `results/benchmark_v2_repeats.csv`
+- `results/benchmark_v2_summary.csv`
+
+
 ## Sınırlılıklar
 
 - Projede etiketlenmiş gerçek köşe noktalarına dayalı bir doğruluk testi bulunmaz.

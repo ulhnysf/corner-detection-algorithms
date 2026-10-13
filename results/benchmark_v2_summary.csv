@@ -1,0 +1,5 @@
+﻿Algoritma,Goruntu_Sayisi,Ortalama_Tespit_Sayisi,Ortalama_Sure_ms,Medyan_Sure_ms,Goruntuler_Arasi_Std_ms,Ortalama_Tekrar_Std_ms,Tekrar_Sayisi
+FAST,15,7548.6667,1.4440,0.9163,1.9523,0.0744,20
+Harris,15,21348.0000,5.0925,3.4763,4.3408,0.5493,20
+ORB,15,499.3333,6.1638,3.6245,7.5315,0.3293,20
+Shi-Tomasi,15,100.0000,4.7921,3.2188,4.0838,0.2236,20
