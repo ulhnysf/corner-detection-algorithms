@@ -5,6 +5,34 @@ Bu proje, **bilgisayarla görme (Computer Vision)** alanında kullanılan **Harr
 Proje kapsamında görüntüler ön işleme aşamasından geçirilir, tespit edilen köşe veya anahtar noktalar görüntüler üzerinde işaretlenir ve algoritmaların tespit sayıları ile çalışma süreleri kaydedilir.
 
 > **Kapsam notu:** Derin öğrenme tabanlı yaklaşımlar proje raporunda incelenmiştir; paylaşılan Python kodlarında bir derin öğrenme modeli uygulaması bulunmamaktadır.
+> ## Örnek Sonuç Görselleri
+
+Aşağıda aynı bina görüntüsünün dört farklı algoritma ile işlenmiş örnek sonuçları yer almaktadır.
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Harris</b><br>
+      <img src="report_images/Harris%20Building.jpg" width="260">
+    </td>
+    <td align="center">
+      <b>Shi-Tomasi</b><br>
+      <img src="report_images/shi_tomasi%20Building.jpg" width="260">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>FAST</b><br>
+      <img src="report_images/fast%20Building.jpg" width="260">
+    </td>
+    <td align="center">
+      <b>ORB</b><br>
+      <img src="report_images/orb_building.jpg" width="260">
+    </td>
+  </tr>
+</table>
+
+Bu görseller, aynı sahnede farklı köşe / anahtar nokta tespit algoritmalarının ürettiği sonuçları görsel olarak karşılaştırmak amacıyla eklenmiştir.
 
 ## Kullanılan teknolojiler
 
